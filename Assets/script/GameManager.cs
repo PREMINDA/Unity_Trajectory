@@ -6,6 +6,7 @@ namespace script
     public class GameManager : MonoBehaviour
     {
         public static GameManager Instance;
+        public Trajectory trajectory;
         
         [SerializeField]private float pushForce = 4f;
         [SerializeField]private Ball ball;
@@ -50,6 +51,7 @@ namespace script
         {
             ball.DesActivateRb ();
             _startPoint = _cam.ScreenToWorldPoint (Input.mousePosition);
+            trajectory.Show ();
         }
         private void OnDrag()
         {
@@ -61,11 +63,13 @@ namespace script
             
             //just for debug
             Debug.DrawLine (_startPoint, _endPoint, Color.green);
+            trajectory.UpdateDots (ball.Pos, _force);
         }
         private void OnDragEnd()
         {
             ball.ActivateRb ();
             ball.Push (_force);
+            trajectory.Hide ();
         }
 
         

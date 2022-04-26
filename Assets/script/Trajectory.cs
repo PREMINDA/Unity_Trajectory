@@ -49,12 +49,7 @@ public class Trajectory : MonoBehaviour
         for (int i = 0; i < dotsNumber; i++) {
             _pos.x = (ballPos.x + forceApplied.x * _timeStamp);
             _pos.y = (ballPos.y + forceApplied.y * _timeStamp) - (Physics2D.gravity.magnitude * _timeStamp * _timeStamp) / 2f;
-		
-            //you can simlify this 2 lines at the top by:
-//pos = (ballPos+force*time)-((-Physics2D.gravity*time*time)/2f);
-//
-//but make sure to turn "pos" in Ball.cs to Vector2 instead of Vector3	
-			
+            
             _dotsList [i].position = _pos;
             _timeStamp += dotSpacing;
         }
