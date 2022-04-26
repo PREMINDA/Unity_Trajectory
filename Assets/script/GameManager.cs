@@ -61,8 +61,6 @@ namespace script
             _direction = (_startPoint - _endPoint).normalized;
             _force = _direction * _distance * pushForce;
             
-            //just for debug
-            Debug.DrawLine (_startPoint, _endPoint, Color.green);
             trajectory.UpdateDots (ball.Pos, _force);
             trajectory.Show ();
         }

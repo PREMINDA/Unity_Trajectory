@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ae32c31-eaed-417b-b960-86fa5b7747ac" name="Changes" comment="Trajectory script in ball">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Trajectory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Trajectory/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefab/TrajectoryDot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefab/TrajectoryDot.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/script/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/script/Trajectory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/script/Trajectory.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1650925729637</updated>
       <workItem from="1650925736565" duration="4303000" />
-      <workItem from="1651003749486" duration="2726000" />
+      <workItem from="1651003749486" duration="8186000" />
     </task>
     <task id="LOCAL-00001" summary="Trajectory script in ball">
       <created>1651005200733</created>
