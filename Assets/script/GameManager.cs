@@ -64,6 +64,7 @@ namespace script
             //just for debug
             Debug.DrawLine (_startPoint, _endPoint, Color.green);
             trajectory.UpdateDots (ball.Pos, _force);
+            trajectory.Show ();
         }
         private void OnDragEnd()
         {

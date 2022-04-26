@@ -9,7 +9,7 @@ public class Trajectory : MonoBehaviour
     [SerializeField]private GameObject dotPrefab;
     [SerializeField]private float dotSpacing;
     [SerializeField][Range (0.01f, 0.3f)] float dotMinScale;
-    [SerializeField][Range (0.3f, 1f)] float dotMaxScale;
+    [SerializeField][Range (0.3f, 0.8f)] float dotMaxScale;
     
     private Transform[] _dotsList;
     private Vector2 _pos;
@@ -18,12 +18,12 @@ public class Trajectory : MonoBehaviour
     void Start()
     {
        Hide(); 
+       PrepareDots ();
     }
 
     // Update is called once per frame
     void Update()
     {
-        PrepareDots();
     }
     void PrepareDots ()
     {
