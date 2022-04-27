@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ae32c31-eaed-417b-b960-86fa5b7747ac" name="Changes" comment="Trajectory script in ball">
+    <list default="true" id="6ae32c31-eaed-417b-b960-86fa5b7747ac" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Trajectory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Trajectory/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/script/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/script/Sq.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/script/Sq.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock://F:/UNITY/Trajectory/Assets/script/Trajectory.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://F:/UNITY/Trajectory/Assets/script/GameManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -61,7 +58,8 @@
       <option name="presentableId" value="Default" />
       <updated>1650925729637</updated>
       <workItem from="1650925736565" duration="4303000" />
-      <workItem from="1651003749486" duration="8186000" />
+      <workItem from="1651003749486" duration="8593000" />
+      <workItem from="1651095010737" duration="2847000" />
     </task>
     <task id="LOCAL-00001" summary="Trajectory script in ball">
       <created>1651005200733</created>
@@ -70,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651005200733</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="sq script">
+      <created>1651012679167</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651012679167</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +98,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Trajectory script in ball" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trajectory script in ball" />
+    <MESSAGE value="sq script" />
+    <option name="LAST_COMMIT_MESSAGE" value="sq script" />
   </component>
 </project>

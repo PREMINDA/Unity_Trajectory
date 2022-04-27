@@ -7,10 +7,11 @@ namespace script
     {
         public static GameManager Instance;
         public Trajectory trajectory;
-        
+        public Sq sq;
+        public GameObject objectSq;
         [SerializeField]private float pushForce = 4f;
         [SerializeField]private Ball ball;
-
+        
         private Camera _cam;
         private bool _isDragging;
         private Vector2 _startPoint;
@@ -52,23 +53,26 @@ namespace script
             ball.DesActivateRb ();
             _startPoint = _cam.ScreenToWorldPoint (Input.mousePosition);
             trajectory.Show ();
+            objectSq.SetActive(true);
         }
         private void OnDrag()
         {
             
             _endPoint = _cam.ScreenToWorldPoint (Input.mousePosition);
             _distance = Vector2.Distance (_startPoint, _endPoint);
-            _direction = (_startPoint - _endPoint).normalized;
-            _force = _direction * _distance * pushForce;
+            //_direction = (_startPoint - _endPoint).normalized;
+            _force = sq.getLookDir() * _distance * pushForce;
             
             trajectory.UpdateDots (ball.Pos, _force);
             trajectory.Show ();
+            objectSq.SetActive(true);
         }
         private void OnDragEnd()
         {
             ball.ActivateRb ();
             ball.Push (_force);
             trajectory.Hide ();
+            objectSq.SetActive(false);
         }
 
         
