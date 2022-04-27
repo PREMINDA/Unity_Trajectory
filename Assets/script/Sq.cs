@@ -30,13 +30,13 @@ public class Sq : MonoBehaviour
     private void FixedUpdate()
     {
         
-        _lookDir = _mouseScreenPosition - _rb.position;
+        _lookDir = (_mouseScreenPosition - _rb.position).normalized;
         float angle = Mathf.Atan2(_lookDir.y, _lookDir.x) * Mathf.Rad2Deg;
         _rb.rotation = angle;
     }
 
     public Vector2 getLookDir()
     {
-        return _lookDir.normalized;
+        return _lookDir;
     }
 }
