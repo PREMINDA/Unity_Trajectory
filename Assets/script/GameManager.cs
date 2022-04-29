@@ -7,19 +7,20 @@ namespace script
     {
         public static GameManager Instance;
         public Trajectory trajectory;
-        public Sq sq;
-        public GameObject objectSq;
+
         [SerializeField]private float pushForce = 4f;
         [SerializeField]private Ball ball;
+        [SerializeField]private LineRender render;
+        [SerializeField]private float forceMultiplier = 1f;
         
         private Camera _cam;
         private bool _isDragging;
-        private Vector2 _startPoint;
         private Vector2 _endPoint;
         private Vector2 _direction;
         private Vector2 _force;
         private float _distance;
-    
+        
+
         void Awake ()
         {
             if (Instance == null) {
@@ -51,30 +52,29 @@ namespace script
         private void OnDragStart()
         {
             ball.DesActivateRb ();
-            _startPoint = _cam.ScreenToWorldPoint (Input.mousePosition);
             trajectory.Show ();
-            objectSq.SetActive(true);
         }
         private void OnDrag()
         {
-            
+            Vector3 ballPos = ball.GetBallPos();
+            Vector2 ballPosV2 = new Vector2(ballPos.x, ballPos.y);
             _endPoint = _cam.ScreenToWorldPoint (Input.mousePosition);
-            _distance = Vector2.Distance (_startPoint, _endPoint);
-            //_direction = (_startPoint - _endPoint).normalized;
-            _force = sq.getLookDir() * _distance * pushForce;
+            _distance = Vector2.Distance (ballPosV2, _endPoint);
+            _direction = (_endPoint - ballPosV2).normalized;
+            _force = _direction * _distance * pushForce*forceMultiplier;
             
-            trajectory.UpdateDots (ball.Pos, _force);
+            trajectory.UpdateDots (ballPos, _force);
             trajectory.Show ();
-            objectSq.SetActive(true);
+            render.SetStarEndtPoint(ballPosV2,_endPoint);
+            render.SetEnableTrue();
         }
         private void OnDragEnd()
         {
             ball.ActivateRb ();
             ball.Push (_force);
             trajectory.Hide ();
-            objectSq.SetActive(false);
+            render.SetEnableFale();
         }
 
-        
     }
 }

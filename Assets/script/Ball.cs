@@ -6,7 +6,7 @@ namespace script
     {
         [HideInInspector] public Rigidbody2D rb;
         [HideInInspector] public CircleCollider2D col;
-        [HideInInspector] public Vector3 Pos { get { return transform.position; } }
+        //[HideInInspector] public Vector3 Pos { get { return transform.position; } }
 
         private void Awake()
         {
@@ -29,6 +29,11 @@ namespace script
             rb.velocity = Vector3.zero;
             rb.angularVelocity = 0f;
             rb.isKinematic = true;
+        }
+
+        public Vector3 GetBallPos()
+        {
+            return transform.position;
         }
     }
 }
