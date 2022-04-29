@@ -3,14 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="6ae32c31-eaed-417b-b960-86fa5b7747ac" name="Changes" comment="Add new Line Render">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Trajectory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Trajectory/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/script/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/script/Ball.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/script/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/script/LineRender.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/script/LineRender.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://F:/UNITY/Trajectory/Assets/script/Ball.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -61,7 +62,7 @@
       <workItem from="1650925736565" duration="4303000" />
       <workItem from="1651003749486" duration="8593000" />
       <workItem from="1651095010737" duration="3788000" />
-      <workItem from="1651266280979" duration="2165000" />
+      <workItem from="1651266280979" duration="3391000" />
     </task>
     <task id="LOCAL-00001" summary="Trajectory script in ball">
       <created>1651005200733</created>
