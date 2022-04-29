@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ae32c31-eaed-417b-b960-86fa5b7747ac" name="Changes" comment="Add Sq Aim">
-      <change beforePath="$PROJECT_DIR$/Assets/script/Sq.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/script/Sq.cs" afterDir="false" />
-    </list>
+    <list default="true" id="6ae32c31-eaed-417b-b960-86fa5b7747ac" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +9,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://F:/UNITY/Trajectory/Assets/script/GameManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://F:/UNITY/Trajectory/Assets/script/Sq.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -60,7 +59,7 @@
       <updated>1650925729637</updated>
       <workItem from="1650925736565" duration="4303000" />
       <workItem from="1651003749486" duration="8593000" />
-      <workItem from="1651095010737" duration="3157000" />
+      <workItem from="1651095010737" duration="3788000" />
     </task>
     <task id="LOCAL-00001" summary="Trajectory script in ball">
       <created>1651005200733</created>
@@ -83,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651098023735</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="normalized lookDir">
+      <created>1651098896812</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651098896812</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +114,7 @@
     <MESSAGE value="Trajectory script in ball" />
     <MESSAGE value="sq script" />
     <MESSAGE value="Add Sq Aim" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Sq Aim" />
+    <MESSAGE value="normalized lookDir" />
+    <option name="LAST_COMMIT_MESSAGE" value="normalized lookDir" />
   </component>
 </project>
