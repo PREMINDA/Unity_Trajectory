@@ -19,21 +19,19 @@ namespace script
         private Vector2 _direction;
         private Vector2 _force;
         private float _distance;
-        
-
         void Awake ()
         {
             if (Instance == null) {
                 Instance = this;
             }
         }
+        
         void Start()
         {
             _cam = Camera.main;
             ball.DesActivateRb ();
         }
-
-        // Update is called once per frame
+        
         void Update()
         {
             if (Input.GetMouseButtonDown (0)) {
@@ -49,11 +47,13 @@ namespace script
                 OnDrag ();
             }
         }
+        
         private void OnDragStart()
         {
             ball.DesActivateRb ();
             trajectory.Show ();
         }
+        
         private void OnDrag()
         {
             Vector3 ballPos = ball.GetBallPos();
@@ -68,6 +68,7 @@ namespace script
             render.SetStarEndtPoint(ballPosV2,_endPoint);
             render.SetEnableTrue();
         }
+        
         private void OnDragEnd()
         {
             ball.ActivateRb ();

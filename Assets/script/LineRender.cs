@@ -9,9 +9,7 @@ public class LineRender : MonoBehaviour
     private Vector2 _startPoint;
     private Vector2 _endPoint;
     private LineRenderer _lr;
-    
 
-    
     void Start()
     {
         _lr = GetComponent<LineRenderer>();
@@ -20,8 +18,7 @@ public class LineRender : MonoBehaviour
         _lr.enabled = false;
         _lr.material.SetColor("_Color", new Color(1f, 1f, 1f, 0.3f));
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         Vector2 enp = Vector2.Lerp(_startPoint, _endPoint, lengthMultiplier);

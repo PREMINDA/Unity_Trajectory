@@ -6,8 +6,6 @@ namespace script
     {
         [HideInInspector] public Rigidbody2D rb;
         [HideInInspector] public CircleCollider2D col;
-        //[HideInInspector] public Vector3 Pos { get { return transform.position; } }
-
         private void Awake()
         {
             rb = GetComponent<Rigidbody2D>();

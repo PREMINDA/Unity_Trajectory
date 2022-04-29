@@ -20,11 +20,11 @@ public class Trajectory : MonoBehaviour
        Hide(); 
        PrepareDots ();
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
     }
+    
     void PrepareDots ()
     {
         _dotsList = new Transform[dotsNumber];
