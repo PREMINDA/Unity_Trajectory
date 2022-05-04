@@ -8,6 +8,7 @@ public class RandomBall : MonoBehaviour
 {
     private Rigidbody2D _rb;
     
+    
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -16,7 +17,7 @@ public class RandomBall : MonoBehaviour
     
     void Update()
     {
-        //Debug.Log(_rb.velocity.x);
+        
     }
 
     private void OnTriggerEnter2D(Collider2D col)
